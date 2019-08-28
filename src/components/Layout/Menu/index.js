@@ -12,7 +12,7 @@ const Menu = () => {
   return (
     <MenuWrapper>
       <MenuIcon onClick={() => setIsOpen(!isOpen)} onBlur={e => hide(e)}>
-        Menu
+        {isOpen ? 'Close' : 'Menu'}
       </MenuIcon>
       <List isOpen={isOpen}>
         <li>
